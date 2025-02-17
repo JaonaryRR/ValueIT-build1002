@@ -10,8 +10,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
     integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/assets/index-CA42eDXs.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-MI9GdVrG.css">
+  <script type="module" crossorigin src="/assets/main-B_3y4n7A.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-ntuDDyAc.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
           <button class="btn-toggle"><i class="bi bi-list"></i></button>
         </div>
         <div class="btn">
-          <button class="btn-orange">Se connecter</button>
+          <button class="btn-orange-full">Se connecter</button>
         </div>
       </div>
     </div>
@@ -86,12 +87,64 @@
     </ul>
   </div>
 
+  <template id="template-form">
+    <div id="modal" class="modal-hidden">
+      <div class="modal-body">
+        <div class="close-container">
+          <img src="/img/valueit.png" alt="valueit_navbar_logo" class="navbar-img">
+          <button class="close-btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-content">
+          <form action="" class="form-group">
+            <div class="input-group reveal-2">
+              <label for="name">Nom *</label>
+              <input type="text" name="name" placeholder="Saisissez votre nom" autocomplete="off">
+            </div>
+            <div class="input-group reveal-3">
+              <label for="name">Adresse e-mail *</label>
+              <input type="text" name="email" placeholder="Saisissez votre e-mail" autocomplete="off">
+            </div>
+            <button class="btn-orange reveal-6">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="template-test">
+    <div id="test" class="modal-hidden">
+      <div class="modal-body">
+        <div class="close-container">
+          <img src="/img/valueit.png" alt="valueit_navbar_logo" class="navbar-img">
+          <button id="close-btn" class="close-btn"><i class="bi bi-x-lg"></i></button>
+        </div>
+        <div class="modal-content">
+          <h1 class="text-2xl text-orange-500 text-center font-bold my-10">Se connecter à ValueIT Ressources</h1>
+            <form action="dashboard.html" method="POST">
+              <div class="input-group-modal">
+                <label for="name">Email ou identifiant *</label>
+                <input type="text" name="name" placeholder="Saisissez votre identifiant ou adresse email" autocomplete="off">
+              </div>
+              <div class="input-group-modal">
+                <label for="name">Mot de passe *</label>
+                <input type="password" name="password" placeholder="Saisissez votre nom" autocomplete="off">
+              </div>
+              <button class="btn-orange-md">Connexion</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
   <div class="container-1">
     <div class="wrapper reveal">
       <div class="block-left reveal-2">
-        <h1 class="container-title reveal-3">Découvrez Value-IT, l’expertise IT qui met la technologie au service de votre
+        <h1 class="container-title reveal-3">Découvrez Value-IT, l’expertise IT qui met la technologie au service de
+          votre
           réussite</h1>
-        <p class="container-paragraph reveal-4">Chez Value-IT, nous transformons les défis technologiques en opportunités
+        <p class="container-paragraph reveal-4">Chez Value-IT, nous transformons les défis technologiques en
+          opportunités
           concrètes pour votre entreprise. Grâce à notre expertise IT de pointe, nous vous accompagnons dans
           l’optimisation de vos processus, l’innovation et la mise en place de solutions sur-mesure. Nous croyons que
           chaque projet est unique, et c’est pourquoi nous mettons notre savoir-faire au service de votre réussite, en
@@ -130,9 +183,11 @@
           <img src="/img/Antananarivo.png" alt="tana">
         </div>
         <div class="section-2 reveal">
-          <h1 class="container-title reveal-2">Notre siège social est situé dans la zone industrielle Forello à Tanjombato, dans
+          <h1 class="container-title reveal-2">Notre siège social est situé dans la zone industrielle Forello à
+            Tanjombato, dans
             l'enceinte de Somalco, à Antananarivo.</h1>
-          <p class="container-paragraph reveal-4">Notre emplacement stratégique nous permet d'être facilement accessible depuis
+          <p class="container-paragraph reveal-4">Notre emplacement stratégique nous permet d'être facilement accessible
+            depuis
             les
             principaux axes routiers, facilitant ainsi les déplacements pour nos partenaires, clients et collaborateurs.
             Nous sommes au cœur de l'un des quartiers d'affaires les plus dynamiques de la capitale, offrant ainsi un
@@ -176,31 +231,33 @@
       <figure class="figure reveal">
         <img src="/img/valueit.png" alt="valueit_logo" class="w-[200px] reveal-3">
         <div>
-          <blockquote >
-              <p class="figure-paragraph reveal-4">Fondée en 2012, Value-IT continue de se développer de manière durable, en mettant l’innovation au cœur de ses projets et en accompagnant ses clients vers un avenir digital performant.</p>
+          <blockquote>
+            <p class="figure-paragraph reveal-4">Fondée en 2012, Value-IT continue de se développer de manière durable,
+              en mettant l’innovation au cœur de ses projets et en accompagnant ses clients vers un avenir digital
+              performant.</p>
           </blockquote>
         </div>
       </figure>
     </div>
 
-  <footer>
-    <div class="footer-title">
-      <h1>Copyright © 2025 • Value-IT</h1>
-    </div>
-    <div>
-      <ul class="footer-list">
-        <li class="footer-link">
-          <a href="#"><img src="/img/footer-icons/linkedin-icons.svg" alt="facebook_icons"></a>
-        </li>
-        <li class="footer-link">
-          <a href="#"><img src="/img/footer-icons/facebook-icons.svg" alt="facebook_icons"></a>
-        </li>
-        <li class="footer-link">
-          <a href="#"><img src="/img/footer-icons/gmail-icons.svg" alt="facebook_icons"></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+    <footer>
+      <div class="footer-title">
+        <h1>Copyright © 2025 • Value-IT</h1>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <li class="footer-link">
+            <a href="#"><img src="/img/footer-icons/linkedin-icons.svg" alt="facebook_icons"></a>
+          </li>
+          <li class="footer-link">
+            <a href="#"><img src="/img/footer-icons/facebook-icons.svg" alt="facebook_icons"></a>
+          </li>
+          <li class="footer-link">
+            <a href="#"><img src="/img/footer-icons/gmail-icons.svg" alt="facebook_icons"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 </body>
 
 </html>

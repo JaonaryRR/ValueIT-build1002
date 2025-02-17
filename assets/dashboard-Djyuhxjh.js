@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";function s(){const e=document.querySelector(".sidebar");e.addEventListener("mouseenter",()=>{e.classList.replace("sidebar","sidebar-toggle")}),e.addEventListener("mouseleave",()=>{e.classList.replace("sidebar-toggle","sidebar")})}s();
