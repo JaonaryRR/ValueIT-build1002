@@ -2,33 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-    integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script type="module" crossorigin src="/assets/dashboard-Djyuhxjh.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="module" crossorigin src="/assets/dashboard-jfHd0g1H.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="/assets/dashboard-COODm7Un.css">
+  <link rel="stylesheet" crossorigin href="/assets/dashboard-oqDWLrtd.css">
 </head>
 
 <body>
+    
     <nav>
         <div class="sidebar">
+            <img src="/img/valueit.png" alt="valueit_navbar_logo" class="navbar-img my-10 mx-4 w-[120px]">
             <ul>
-                <li>
+                <li id="btn-home">
                     <img src="img/dashboard-icons/home-svgrepo-com.svg" alt="home_icons" class="sidebar-icons">
                     <h1>Accueil</h1>
                 </li>
-                <li>
+                <li id="btn-presence">
                     <img src="img/dashboard-icons/person-circle-svgrepo-com.svg" alt="home_icons" class="sidebar-icons">
                     <h1>Présence</h1>
                 </li>
-                <li>
-                    <img src="img/dashboard-icons/resource-absence-svgrepo-com.svg" alt="home_icons" class="sidebar-icons">
+                <li id="btn-conge">
+                    <img src="img/dashboard-icons/resource-absence-svgrepo-com.svg" alt="home_icons"
+                        class="sidebar-icons">
                     <h1>Congé</h1>
                 </li>
                 <li>
@@ -43,6 +46,144 @@
             </ul>
         </div>
     </nav>
+    <div class="content">
+        <nav class="bg-white p-3 flex flex-row w-screen justify-center items-center -ms-6 dark:text-white dark:bg-slate-900 border dark:border-slate-700">
+            <ul class="flex flex-row justify-center items-center">
+                <li class="mx-4 hover:text-orange-600">Profil <i class="bi bi-person-circle"></i></li>
+                <li class="mx-4 hover:text-orange-600">Prendre une pause <i class="bi bi-pause-circle"></i></li>
+                <li class="mx-4 hover:text-orange-600">Se déconnecter <i class="bi bi-door-open"></i></li>
+            </ul>
+        </nav>
+
+        <div id="content-change">
+            <!--The templates that have just been cloned are placed here-->
+            
+        </div>
+
+        <template id="home-content">
+            <div class="home">
+                
+                <div class="container-1">
+                    <div class="information-container">
+                        <span>Aujourd'hui : 05/03/2025</span>
+                        <span>Durée : 03:06</span>
+                        <span>Pause : 10 min</span>
+                    </div>
+                    <div class="clock-container">
+                        <h1>Heure d'entrée</h1>
+                        <div id="clock-entry">
+                            <div id="hour_entry">06</div>
+                            <div id="minutes_entry">00</div>
+                            <div id="seconds_entry">12</div>
+                        </div>
+                    </div>
+                    <div class="clock-container">
+                        <h1>Heure actuel</h1>
+                        <div id="clock-current">
+                            <div id="hour"></div>
+                            <div id="minutes"></div>
+                            <div id="seconds"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <div class="biography flex flex-col">
+
+                        <div class="fiche-row flex flex-row">
+                            <div class="profil-picture">
+                                <img src="img/facebook-men.jpg" alt="facebook_none"
+                                    class=" ms-6 my-4 h-40 w-40 rounded-lg">
+                            </div>
+                            <div class="section-1">
+                                <label>Nom </label>
+                                <h1>FENOMANANA JAONARY Riantsoa</h1>
+                                <label>Adresse</label>
+                                <h1>LOT II B 122 Manjakaray</h1>
+                                <label>Email</label>
+                                <h1>jaonaryriantsoa@gmail.com</h1>
+                            </div>
+                        </div>
+                        <div class="section-container">
+                            <div class="section-2">
+                                <label>CIN</label>
+                                <h1>101 251 231 512 </h1>
+                                <label>Statut Marital</label>
+                                <h1>Marié </h1>
+                                <label>Téléphone</label>
+                                <h1>032 03 734 48</h1>
+                                <label>Nationalité</label>
+                                <h1>Malgache</h1>
+                            </div>
+                            <div class="section-3">
+                                <label>Numéro matricule</label>
+                                <h1>3698</h1>
+                                <label>Fonction :</label>
+                                <h1>Technicien Maintenance</h1>
+                                <label>Date d'embauche</label>
+                                <h1>29/11/2021</h1>
+                                <label>Type de contrat</label>
+                                <h1>CDI</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </template>
+
+
+    <template id="presence-content">
+        <div class="jumbotron">
+            <div class="body-profil">
+                <img src="img/facebook-men.jpg" alt="facebook_none" class="profil_img">
+                <div class="bio">
+                    <h1>Jaonary Riantsoa</h1>
+                    <p>FENOMANANA</p>
+                    <p>Tech</p>
+                    <p>3698</p>
+                </div>
+            </div>
+        </div>
+        <div class="setting">
+            <div class="presence">
+                <div class="chart-style">
+                    <div class="pt-6 px-2 pb-0">
+                        <h1 class="text-xl text-orange-600 font-bold">Présence Par mois</h1>
+                        <div id="bar-chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="chart-style">
+                    <div class="pt-6 px-2 pb-0">
+                        <h1 class="text-xl text-orange-600 font-bold">Taux de présence</h1>
+                        <div id="bar-chart-radial"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="chart-style w-[1150px] my-10 flex items-center">
+                    <div class="pt-6 px-2 pb-0">
+                        <h1 class="text-xl text-orange-600 font-bold">Présence Journalier et absence</h1>
+                        <div id="bar-chart-heatmap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <div class="btn-switch">
+        <label class="inline-flex items-center me-5 cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer" id="dark-mode-btn">
+            <div
+                class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-slate-900 dark:peer-focus:ring-white dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-slate-900 dark:peer-checked:bg-slate-900">
+            </div>
+            <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Dark Mode</span>
+        </label>
+    </div>
+
+    </div>
 </body>
 
 </html>
